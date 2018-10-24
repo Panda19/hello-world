@@ -6,8 +6,10 @@ pipeline {
   }
   stages {
     stage ('build') {
-       steps{
-         sh 'ant -v'}
+       steps {
+         sh 'ant -v'
+         sh 'du -sh'
+       }
       }
 }
 }
